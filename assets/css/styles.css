@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #002d72;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Home Section */
+#home {
+    background: url('assets/img/dna.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.intro-text {
+    margin-top: 20px;
+}
+
+.intro-text h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* About Section */
+#about {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Publications Section */
+#publications {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+#publications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#publications li {
+    margin: 10px 0;
+}
+
+#publications a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#publications a:hover {
+    text-decoration: underline;
+}
+
+/* Experience Section */
+#experience {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#experience img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Extra Section */
+#extra {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#extra img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #002d72;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
