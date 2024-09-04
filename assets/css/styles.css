@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Update this if needed */
+    font-family: 'Roboto', sans-serif;
     background: url('assets/img/dna.gif') no-repeat center center fixed;
     background-size: cover;
     color: #333;
@@ -46,8 +46,8 @@ header {
 .profile-pic {
     width: 250px;
     height: 250px;
-    border-radius: 10px; /* Haciendo la imagen cuadrada */
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .intro-text {
@@ -73,6 +73,28 @@ header {
 }
 
 #about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Research Section */
+#research {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.research-content {
+    margin: 20px 0;
+}
+
+.research-item {
+    margin-bottom: 40px;
+}
+
+.research-item img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -122,18 +144,20 @@ header {
     margin: 20px auto;
 }
 
-/* Extra Section */
-#extra {
+/* CV Section */
+#cv {
     background-color: #ffffff;
     padding: 40px 20px;
     text-align: center;
 }
 
-#extra img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+#cv a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#cv a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -149,4 +173,30 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
 }
