@@ -144,6 +144,28 @@ header {
     margin: 20px auto;
 }
 
+/* Lectures Section */
+#lectures {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.lectures-content {
+    margin: 20px 0;
+}
+
+.lecture-item {
+    margin-bottom: 40px;
+}
+
+.lecture-item img {
+    max-width: 80%; /* Ajusta el ancho máximo de las imágenes en la sección de lectures */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Espacio debajo de cada imagen */
+}
+
 /* CV Section */
 #cv {
     background-color: #ffffff;
