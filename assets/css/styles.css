@@ -36,17 +36,20 @@ header {
 
 /* Home Section */
 #home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
+    padding: 0;
     background-color: #fff;
 }
 
-.profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
+.animated-header {
+    width: 100%;
+    height: 300px; /* Puedes cambiar a 350px o 400px si quieres más alto */
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-header video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -104,121 +107,4 @@ header {
 /* Publications Section */
 #publications {
     background-color: #ffffff;
-    padding: 40px 20px;
-}
-
-#publications h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#publications ul {
-    list-style: none;
-    padding: 0;
-}
-
-#publications li {
-    margin: 10px 0;
-}
-
-#publications a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-#publications a:hover {
-    text-decoration: underline;
-}
-
-/* Experience Section */
-#experience {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#experience img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-/* Lectures Section */
-#lectures {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.lectures-content {
-    margin: 20px 0;
-}
-
-.lecture-item {
-    margin-bottom: 40px;
-}
-
-.lecture-item img {
-    max-width: 80%; /* Ajusta el ancho máximo de las imágenes en la sección de lectures */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Espacio debajo de cada imagen */
-}
-
-/* CV Section */
-#cv {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#cv a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-#cv a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #3C5B6F;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .navbar a {
-        padding: 10px;
-    }
-
-    #home {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile-pic {
-        width: 200px;
-        height: 200px;
-    }
-
-    .intro-text {
-        text-align: center;
-    }
-}
+    paddi
