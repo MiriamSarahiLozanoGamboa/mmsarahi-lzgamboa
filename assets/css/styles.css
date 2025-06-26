@@ -1,16 +1,14 @@
 /* General Styles */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #d5d2cc;
     color: #333;
     line-height: 1.6;
 }
 
-
+/* Header/Navbar */
 header {
     background-color: #3C5B6F;
     color: #fff;
@@ -37,23 +35,23 @@ header {
 /* Home Section */
 #home {
     padding: 0;
-    background-color: #fff;
+    background-color: #d5d2cc;
 }
 
 .animated-header {
     width: 100%;
-    height: auto;       /* El contenedor se adapta al video */
-    margin-bottom: 40px; /* Espacio para separar la siguiente sección */
+    height: auto;
+    margin-bottom: 40px;
 }
 
 .animated-header video {
     width: 100%;
-    height: auto;       /* Video mantiene su proporción original */
-    object-fit: contain; /* Se muestra completo, sin recortes */
-    display: block;      /* Evita espacios extra */
-    
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
+/* Intro Text */
 .intro-text {
     text-align: right;
     color: #070F2B;
@@ -61,6 +59,7 @@ header {
 
 .intro-text h1 {
     font-size: 2.5em;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -69,43 +68,132 @@ header {
     margin: 10px 0 0;
 }
 
-/* About Section */
-#about {
-    background-color: #f4f4f4;
+/* Section Layout */
+section {
+    background-color: #d5d2cc;
     padding: 40px 20px;
-    text-align: center;
 }
 
-#about img {
+/* Section Titles */
+section h2, section h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #070F2B;
+}
+
+/* Paragraphs and Lists */
+section p, section li {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Links */
+section a {
+    font-weight: normal;
+    color: #003366;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+section img,
+.research-item img,
+.lecture-item img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
 
-/* Research Section */
-#research {
-    background-color: #ffffff;
-    padding: 40px 20px;
+/* Specific Sections */
+#about,
+#research,
+#experience,
+#extra,
+#publications,
+#lectures,
+#cv {
+    background-color: #d5d2cc;
     text-align: center;
 }
 
-.research-content {
-    margin: 20px 0;
+/* Publications List */
+#publications ul {
+    list-style: none;
+    padding: 0;
 }
 
-.research-item {
-    margin-bottom: 40px;
+#publications li {
+    margin: 10px 0 15px 0;
 }
 
-.research-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+/* CV Section Links */
+#cv a {
+    color: #003366;
+    text-decoration: none;
 }
 
-/* Publications Section */
-#publications {
-    background-color: #ffffff;
-    paddi
+#cv a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #3C5B6F;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .animated-header {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .animated-header video {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+}
